@@ -1,0 +1,1615 @@
+/*reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*vị trí - kích thước (chiều rộng- chiều cao)- màu sắc- kiểu chữ- hình dạng*/
+#myButton:active {
+    background-color: green;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif; /* kiểu chữ */
+    scroll-behavior: smooth;
+} 
+
+#main {
+    
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#header {
+    height: 70px;
+    background-color: #074c95;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#nav li{
+    display: inline-block; /* viết ngang*/
+}
+
+#nav li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0px 24px 0px 24px;
+    display: inline-block;
+    text-transform: uppercase; /* viết hoa*/
+}
+
+#nav li a:hover {
+    color: #fffc1e;
+    background-color: darkblue;
+}
+
+#content {
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-minimalistic-blue-honeycomb-technology-background-picture-image_1085284.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /*Đảm bảo hình ảnh nền sẽ lấp đầy toàn bộ kích thước của trang  */
+    justify-content: center; 
+}
+
+#content .header2{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .text{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ---------------Khóa Website---------------- */
+#khoaweb{
+    width: 500px;
+    height: 300px;
+    position: fixed; 
+    top: 80px;
+    left: 0;   
+    animation: slideInRight 0.5s forwards;
+    z-index: 4;
+
+}
+
+.okhoakhoa{
+    position: fixed;
+    top: 25px;
+    left: 1575px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 4;
+}
+.textkhoa{
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 1550px;
+    /* transform: translate(-50%, -50%); */
+    padding: 13px 10px 13px 70px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #074c95;
+    font-size: 20px;
+    text-align: center;
+    color: #ff0000;
+    line-height: 1.6;
+}
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+/* ---------------Mở Khóa Website---------------- */
+#moweb{
+    width: 500px;
+    height: 300px;
+    position: fixed; 
+    top: 80px;
+    left: 0;   
+    animation: slideInRight 0.5s forwards;
+    z-index: 4;
+
+}
+
+.okhoamo{
+    position: fixed;
+    top: 25px;
+    left: 1575px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 4;
+}
+.textmo{
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 1550px;
+    /* transform: translate(-50%, -50%); */
+    padding: 33px 10px 13px 70px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #074c95;
+    font-size: 20px;
+    text-align: center;
+    color: green;
+    line-height: 1.6;
+}
+/* ----------cảnh báo-------------- */
+#canhbaonhapsaibypass{
+    width: 500px;
+    height: 300px;
+    position: fixed; 
+    top: 80px;
+    left: 0;   
+    animation: slideInRight 0.5s forwards;
+    z-index: 4;
+
+}
+
+.warning{
+    position: fixed;
+    top: 35px;
+    left: 1575px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 4;
+}
+.textwarning{
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 1550px;
+    /* transform: translate(-50%, -50%); */
+    padding: 33px 10px 13px 70px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #074c95;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    line-height: 1.6;
+}
+
+/* --------------------------Mô hình--------------------  */
+#content #mohinh{
+
+}
+
+.chiller{
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    z-index: 1;
+}
+
+.pipe1{
+    position: absolute;
+    top: 650px;
+    left: 675px;
+    z-index: 1;
+}
+
+.pipe2{
+    position: absolute;
+    top: 770px;
+    left: 675px;
+    z-index: 1;
+}
+
+.valvebypass{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 647px;
+    left: 730px;
+    z-index: 0;
+    
+}
+
+.valvesupply{
+    position: absolute;
+    top: 560px;
+    left: 848px;
+    z-index: 0;
+}
+
+.valvereturn{
+    position: absolute;
+    top: 687px;
+    left: 848px;
+    z-index: 0;
+}
+
+.pipethang1-1{
+    position: absolute;
+    top: 649px;
+    left: 377px;
+    z-index: 1;
+}
+
+.pipethang2-1{
+    position: absolute;
+    top: 776px;
+    left: 377px;
+    z-index: 1;
+}
+
+.tempsensor1{
+    position: absolute;
+    top: 635px;
+    left: 447px;
+    z-index: 1;
+}
+.tempsensor2{
+    position: absolute;
+    top: 762px;
+    left: 447px;
+    z-index: 1;
+}
+
+.pipethang1-2{
+    position: absolute;
+    top: 649px;
+    left: 505px;
+    z-index: 1;
+}
+
+.pipethang2-2{
+    position: absolute;
+    top: 776px;
+    left: 505px;
+    z-index: 1;
+}
+
+.presensor1{
+    position: absolute;
+    top: 617px;
+    left: 597px;
+    z-index: 1;
+}
+.presensor2{
+    position: absolute;
+    top: 743px;
+    left: 597px;
+    z-index: 1;
+}
+.pipethang1-3{
+    position: absolute;
+    top: 649px;
+    left: 968px;
+    z-index: 1;
+}
+
+.pipethang2-3{
+    position: absolute;
+    top: 776px;
+    left: 968px;
+    z-index: 1;
+}
+
+.co1{
+    position: absolute;
+    top: 657px;
+    left: 1040px;
+    z-index: 1;
+}
+
+.co2{
+    position: absolute;
+    top: 784px;
+    left: 1088px;
+    z-index: 1;
+}
+
+.pipethang1-4{
+    position: absolute;
+    top: 417px;
+    left: 1035px;
+    z-index: 1;
+}
+
+.pipethang2-4{
+    position: absolute;
+    top: 418px;
+    left: 1082px;
+    z-index: 1;
+}
+
+.ahu{
+    position: absolute;
+    top: 238px;
+    left: 600px;
+    z-index: 1;
+}
+
+.air1{
+    height: 400px;
+    position: absolute;
+    top: 180px;
+    left: 400px;
+    z-index: 1;
+}
+
+.air2{
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    left: 800px;
+    z-index: 1;
+}
+
+.air3{
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    left: 830px;
+    z-index: 1;
+}
+
+.air4{
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    left: 1300px;
+    z-index: 1;
+}
+
+.fanhead{
+    width: 52px;
+    position: absolute;
+    top: 324px;
+    left: 1315px;
+    z-index: 1;;
+}
+
+.fanheadoff{
+    width: 60px;
+    position: absolute;
+    top: 324px;
+    left: 1312px;
+    z-index: 1;;
+}
+
+.pipethang1-5{
+    position: absolute;
+    top: 302px;
+    left: 1600px;
+    z-index: 1;
+}
+
+.co3{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 318px;
+    left: 1672px;
+    z-index: 1;
+}
+
+.pipethang1-6{
+    position: absolute;
+    top: 355px;
+    left: 1665px;
+    z-index: 1;
+}
+
+.hcmute{
+    position: absolute;
+    top: 455px;
+    left: 1420px;
+    z-index: 1;
+}
+
+.fan{
+    position: absolute;
+    top: 298px;
+    left: 1277px;
+    z-index: 1;
+    opacity: 0.6;
+}
+/* --------------manual/auto------------------ */
+.controlmode{
+    width: 382px;
+    background: #074c95;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+.controlmode .time{
+    padding: 5px;
+    color: white;
+}
+
+.controlmode .headermode{
+    background: white;
+    border: 2px solid #074c95;
+    color: #074c95;
+    text-align: center;   
+}
+
+.controlmode .headermode_bms{
+    color: white;
+    padding-left: 5px;   
+}
+
+.btncontrol{
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btncontrol button{
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 15px 30px;  
+}
+
+.manual{
+    position: absolute;
+    top: 120px;
+    left: 123px;
+}
+
+.off{
+    position: absolute;
+    top: 120px;
+    left: 232px;
+}
+
+.auto{
+    position: absolute;
+    top: 120px;
+    left: 358px;
+}
+
+.controlmode .tempset{
+    background: white;
+    border: 2px solid #074c95;
+    color: #074c95;
+    font-size: 30px; 
+    padding: 10px 0px 45px 0px; 
+    border-radius: 10px; 
+}
+
+.tempset label{
+    width: 150px;
+    height: 35px;
+    font-size: 30px;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+
+.tempset input{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 32px;
+    position: absolute;
+    top: 187px;
+    left: 150px;
+}
+
+.tempset button{
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 4px 10px;  
+    position: absolute;
+    top: 187px;
+    left: 310px;
+    cursor: pointer;
+}
+/* -------------------------------------- */
+.gsnds{
+    width: 170px;
+    justify-content: center;
+    text-align: center;
+    color: blue;
+    box-shadow: 1px 1px 3px 3px rgb(163, 161, 161);
+    border-radius: 9px;
+    border: 2px solid blue;
+    position: absolute;
+    top: 550px;
+    left: 385px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+}
+
+.gsnds h2{
+    font-weight: 400;
+}
+
+.gsndr{
+    width: 170px;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    border-radius: 9px;
+    border: 2px solid red;
+    position: absolute;
+    top: 850px;
+    left: 385px;
+    z-index: 2;
+}
+
+.gsndr h2{
+    font-weight: 400;
+}
+
+.gsass{
+    width: 170px;
+    justify-content: center;
+    text-align: center;
+    color: blue;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    border-radius: 9px;
+    border: 2px solid blue;
+    position: absolute;
+    top: 550px;
+    left: 565px;   
+}
+
+.gsass h2{
+    font-weight: 400;
+}
+
+.gsasr{
+    width: 170px;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    border-radius: 9px;
+    border: 2px solid red;
+    position: absolute;
+    top: 850px;
+    left: 565px;
+}
+
+.gsasr h2{
+    font-weight: 400;
+}
+
+.gsnddr{
+    width: 250px;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #074c95;
+    border-radius: 9px;
+    border: 2px solid #074c95;
+    position: absolute;
+    top: 530px;
+    left: 1150px;
+    line-height: 1.6;
+}
+
+.gsnddr h2{   
+    font-weight: 400;
+}
+
+.gsnddr h2 span{
+    float: right;
+}
+
+.gsnddr .canhbao{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 9px;
+    justify-content: center;
+    text-align: center;
+}
+
+.gsdadr{
+    width: 250px;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background:#074c95;
+    border-radius: 9px;
+    border: 2px solid #074c95;
+    position: absolute;
+    top: 650px;
+    left: 1150px;
+    line-height: 1.6;
+}
+
+.gsdadr h2{   
+    font-weight: 400;
+}
+
+.gsdadr h2 span{
+    float: right;
+}
+
+.gsdadr .canhbao{
+    font-size: 20px;
+    background: white;
+    border-radius: 9px;
+    justify-content: center;
+    text-align: center;
+}
+
+.giamsatchenhap{
+    width: 250px;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background:#074c95;
+    border-radius: 9px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 440px;
+    left: 700px;
+    line-height: 1.6;
+}
+
+.frame_gauge_only_filter{
+    background-color: white;
+    border: 2px solid #074c95;
+    border-radius: 10px;
+}
+
+.gauge_only_filter{
+    width: 100px;
+    height: 50px;
+    z-index: 2;
+    display: flex;
+}
+
+.filter_text{
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    font-size: 30px;
+
+}
+
+.open_modal_btn{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.open_modal_btnbypass{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal{
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalbypass{
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide{
+    display: none;
+
+}
+
+.modal_inner{
+    font-size: 30px;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: modal_show 0.6s linear;
+}
+
+.modalbypass_inner{
+    font-size: 30px;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: modal_show 0.6s linear;
+}
+
+.modal_header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #074c95;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.modalbypass_header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #074c95;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.modal_body{
+    padding: 10px;
+}
+
+.modalbypass_body{
+    padding: 10px;
+}
+
+.modal_body .valve{
+    color: #074c95;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.modalbypass_body .valve{
+    color: #074c95;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.modal_body p{
+    padding-bottom: 10px;
+}
+
+.modalbypass_body p{
+    padding-bottom: 10px;
+}
+
+#supply_valve{
+    float: right;
+}
+
+#return_valve{
+    float: right;
+}
+
+#bypass_valve{
+    float: right;
+}
+
+#close_open_supply{
+    float: right;  
+}
+
+#close_open_supply_ngoai{
+    position: absolute;
+    top: 610px;
+    left: 910px;
+}
+
+#close_open_return{
+    float: right;
+}
+
+#close_open_return_ngoai{
+    position: absolute;
+    top: 738px;
+    left: 910px;
+}
+
+#close_open_bypass{
+    position: absolute;
+    top: 273px;
+    left: 455px;
+}
+
+.selectoverenable select{  
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.selectoverenablebientan select{  
+    
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.nhapgiatribypass input{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.nhapgiatribypass button{
+    position: absolute;
+    top: 273px;
+    left: 170px;
+}
+
+#close_open_bypass_ngoai{
+    rotate: 90deg;
+    position: absolute;
+    top: 717px;
+    left: 818px;
+}
+/* ----------------- */
+.circle_ngoai{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 717px;
+    left: 818px;
+    border-radius: 50%;
+    background-color: #ff0000; 
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+
+.fill_ngoai{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00b050; /* Màu xanh */
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.circle{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 717px;
+    left: 818px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    overflow: hidden;
+    transform: rotate(-90deg);
+    float: right;
+}
+
+.fill{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00b050; /* Màu xanh */
+    top: 100%;
+    transform: translateY(-100%);
+}
+/* ------------- */
+
+.control_onoff label{
+    font-size: 20px;
+}
+
+.control_onoff button{
+    padding: 7px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+
+.modal_footer_fan{
+    text-align: right;
+}
+
+.modal_footer_fan button{
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    color: white;
+    background: #074c95;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* @keyframes modal_show {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+
+    to{
+        top: 20%;
+        opacity: 1;
+    }
+} */
+
+.open_fan{
+    background: none;
+    border: none;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.modal_fan{
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #074c95;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hide{
+    display: none;
+}
+
+.modal_inner_fan{  
+    width: 1200px;
+    height: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: modal_show 0.6s linear;
+}
+.modal_header_fan{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #074c95;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    font-size: 35px;
+}
+
+.modal_body #fan{
+    color: #074c95;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.monitor-frame{
+    display: block;   
+    padding-top: 20px;
+}
+
+.monitor{
+    width: 100%;
+    height: auto;
+    
+}
+
+ #giamsatdienap{
+    opacity: 0;
+} 
+
+#giamsatdongdien{
+    opacity: 0;
+}
+
+#giamsattanso{
+    opacity: 0;
+}
+
+#giamsattocdo{
+    opacity: 0;
+}
+
+#giamsatcongsuat{
+    opacity: 0;
+}
+
+.para-monitor{
+    margin-left: 55px;
+    list-style: none;
+    width: 14%;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    /* margin: 0 2.5% ; */
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    cursor: pointer;
+    /* background: linear-gradient(180deg, rgba(51, 122, 202, 0.5) 0%, rgba(22, 84, 201, 0.5) 50%, rgba(21, 33, 201, 0.5) 100%); */
+}
+
+
+.control .block1{
+    padding: 10px;
+    width: 17%;
+    height: 220px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.control .block2{
+    padding: 10px;
+    width: 17%;
+    height: 140px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.control .block3{
+    padding: 10px;
+    width: 17%;
+    height: 380px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5% ;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+}
+
+.control .block3 button{
+    margin: 20px 40px;
+    border-radius: 10px;
+    /* background: #074c95; */
+    /* color: white; */
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.control .block4{
+    padding: 10px;
+    width: 50%;
+    height: 380px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5% ;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(163, 161, 161);
+    background-color: #f3fff3;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.control .block4 ul{
+    list-style: none;
+    padding-left: 15px;
+    display: flex;
+}
+.control .block4 li{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.control .block4 .note{
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.input-group label{
+    font-size: 20px;
+}
+
+.input-group input{
+    width: 180px;
+    height: 35px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.para-monitor a{
+    color: black;
+    text-decoration-line: none;
+}
+
+
+
+.title-para-monitor{
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.icon-para-monitor{
+    width: 20%;
+    padding-top: 5px;
+}
+
+.icon-para-monitor_power{
+    width: 60px;
+    padding-top: 5px;
+}
+
+.value-para-monitor{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#voltage-monitor{
+    padding-top: 20px;
+    
+}
+
+.sheet{
+    margin-left: 100px;
+    width: 500px;
+}
+
+.report{
+    font-size: 30px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.report:hover{
+    
+}
+
+.table-sheet{
+    background: #989a9b;
+}
+
+.title-col-sheet{
+    background: white;
+}
+
+.content-row-voltage{
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    
+}
+
+.content-row-current{
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    
+}
+
+.content-row-frequency{
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    
+}
+
+.content-row-speed{
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    
+}
+
+.content-row-power{
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    
+}
+
+.title-col-sheet:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.frame-gauge{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.frame-gauge-text{
+    font-size: 30px;
+
+}
+
+.gauge{
+    width: 500px;
+    height: 250px;
+}
+
+
+
+.value{
+    color: black;
+    background: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.frame-chart{
+    margin-top: 20px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.frame-chart-text{
+    font-size: 30px;
+}
+
+.chart{
+    margin-top: 20px;
+    width: 1000px;
+    height: 600px;
+    /* border: 2px solid #074c95; */
+}
+@keyframes flow-lefttoright {
+    0% {
+        transform: translateX(0); /* Vị trí ban đầu của đường thẳng (trái) */
+    }
+    100% {
+        transform: translateX(32px); /* Vị trí cuối cùng của đường thẳng (phải) */
+    }
+}
+
+@keyframes flow-bottomtotop {
+    0% {
+        transform: translateY(0); /* Vị trí ban đầu của đường thẳng (trái) */
+    }
+    100% {
+        transform: translateY(-32px); /* Vị trí cuối cùng của đường thẳng (phải) */
+    }
+}
+
+@keyframes flow-toptobottom {
+    0% {
+        transform: translateY(0); /* Vị trí ban đầu của đường thẳng (trái) */
+    }
+    100% {
+        transform: translateY(32px); /* Vị trí cuối cùng của đường thẳng (phải) */
+    }
+}
+
+@keyframes flow-righttoleft {
+    0% {
+        transform: translateX(0); /* Vị trí ban đầu của đường thẳng (trái) */
+    }
+    100% {
+        transform: translateX(-32px); /* Vị trí cuối cùng của đường thẳng (phải) */
+    }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 2s infinite;
+}
+
+
+#line-1-1{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 365px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-2{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 505px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-3{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 685px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-4{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 805px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-5{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 965px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-6{
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(0, 76, 255), transparent);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 608px; /* Vị trí dọc của đường thẳng */
+    left: 1052px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-bottomtotop 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-1-7{
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(0, 76, 255), transparent);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 478px; /* Vị trí dọc của đường thẳng */
+    left: 1052px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-bottomtotop 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-1{
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(0, 76, 255), transparent);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 460px; /* Vị trí dọc của đường thẳng */
+    left: 1100px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-toptobottom 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-2{
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(0, 76, 255), transparent);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 580px; /* Vị trí dọc của đường thẳng */
+    left: 1100px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-toptobottom 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-3{
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(0, 76, 255), transparent);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 700px; /* Vị trí dọc của đường thẳng */
+    left: 1100px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-toptobottom 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-4{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 1020px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-5{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 820px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-6{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 710px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-7{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 540px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-2-8{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 400px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-1{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 365px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-2{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 505px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-3{
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 668px; /* Vị trí dọc của đường thẳng */
+    left: 685px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-lefttoright 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-4{
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(0, 76, 255), transparent);
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 705px; /* Vị trí dọc của đường thẳng */
+    left: 781px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-toptobottom 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+#line-3-5{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 710px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-6{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 540px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
+
+#line-3-7{
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(0, 76, 255), transparent);
+    width: 50px;
+    height: 22px;
+    position: absolute;
+    top: 795px; /* Vị trí dọc của đường thẳng */
+    left: 400px; /* Vị trí ngang ban đầu của đường thẳng */
+    animation: flow-righttoleft 2s linear infinite; /* Animation để di chuyển đường thẳng */
+    z-index: 2;
+}
